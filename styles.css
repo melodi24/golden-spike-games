@@ -465,6 +465,26 @@ th h3 {
 }
 
 @media only screen and (max-device-width: 800px) {
+    #content,
+    #content.orders,
+    #content.about-us {
+        width: 100%;
+        margin-right: 0;
+        margin-left:0;
+    }
+
+    #about-us, #orders {
+        width: 100%;
+        margin-right: 5%;
+        margin-left:5%;
+        display: none;
+    }
+
+    #content.about-us #about-us,
+    #content.orders #orders {
+        display: block;
+    }
+
     .about {
         flex-direction: column;
         align-items: center;
@@ -501,10 +521,16 @@ th h3 {
 
     #queue {
         margin: auto;
+        width: 80%;
     }
 
     #rules {
         margin-bottom: 30px;
+        width: 80%;
+    }
+
+    .orders-sidebar {
+        width: 80%;
     }
 
     .orders-text {
